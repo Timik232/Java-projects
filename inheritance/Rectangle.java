@@ -50,6 +50,6 @@ public class Rectangle extends Shape{
 
     @Override
     public String toString() {
-        return "Shape: rectangle," + "width=" + width + "length=" + length + "color= " + color;
+        return "Shape: rectangle," + " width=" + width + " length=" + length + " color= " + color;
     }
 }
