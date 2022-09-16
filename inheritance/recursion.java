@@ -1,6 +1,6 @@
-package rekurs; //12 вариант
+package inheritance; //12 вариант
 import java.util.Scanner;
-public class current {
+public class recursion {
     public static void recursion(){
         Scanner in = new Scanner(System.in);     
         int num = in.nextInt();
