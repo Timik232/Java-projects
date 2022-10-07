@@ -10,10 +10,13 @@ public class BuyMain {
 
             String INN = in.nextLine();
             if (INN.length() != 12)
-                throw new WrongNumberINNException("Wrong format of INN");
+                throw new WrongNumberINNException("Amount of number");
+            String regex = "//d+";
+            if (!INN.matches(regex))
+                throw new WrongNumberINNException("Wrong symbols");
         }
-        catch (WrongNumberINNException INN){
-            System.out.println("Error! Wrong INN");
+        catch (WrongNumberINNException numb){
+            System.out.println(numb.getMessage());
         }
 
     }
