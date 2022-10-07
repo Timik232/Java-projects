@@ -1,10 +1,10 @@
 package framework;
 
-import java.util.Queue;
+import java.util.ArrayDeque;
 
 public class Player {
-    Queue <Integer> cards;
-    public Player(Queue <Integer> cards){
-        this.cards = cards;
+    ArrayDeque <Integer> cards;
+    public Player(ArrayDeque <Integer> cards){
+        this.cards = new ArrayDeque<Integer>(cards);
     }
 }
