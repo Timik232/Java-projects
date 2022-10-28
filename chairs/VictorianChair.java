@@ -1,7 +1,7 @@
 package chairs;
 
 public class VictorianChair implements Chair{
-    int age;
+    private int age;
     VictorianChair(int age){
         this.age=age;
     }

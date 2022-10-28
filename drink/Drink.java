@@ -1,6 +1,6 @@
 package drink;
 
-public class Drink {
+final public class Drink implements Item{
     final private int COST;
     final private String NAME;
     final private String DESCRIPTION;

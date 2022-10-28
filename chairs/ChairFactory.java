@@ -5,6 +5,9 @@ public class ChairFactory implements AbstractChairFactory{
     public VictorianChair createVictorianChair() {
         return new VictorianChair(0);
     }
+    public VictorianChair createVictorianChair(int age) {
+        return new VictorianChair(age);
+    }
 
     @Override
     public MagicChair createMagicanChair() {

@@ -1,9 +1,17 @@
 package factory;
 
 public class Complex {
-    int real, image;
-    Complex(int real, int image){
+    double real, image;
+    Complex(double real, double image){
         this.real = real;
         this.image = image;
+    }
+
+    @Override
+    public String toString() {
+        return "Complex{" +
+                "real=" + real +
+                ", image=" + image +
+                '}';
     }
 }
