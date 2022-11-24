@@ -5,15 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5d069f2c-9b29-41b2-827f-f0bce699b987" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/collect24/testArrayList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/except26/DemoExcept.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/except26/Exception1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/except26/Exception2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generic27/ArrayClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generic27/TestArrayClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generic28/ClassList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generic28/TestClassList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/writetofile25/TestWritingToFile.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/patterns/EditorUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/patterns/EditorUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/patterns/ICreateDocument.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/patterns/ICreateDocument.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/patterns/IDocument.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/patterns/IDocument.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/patterns/ImageDocument.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/patterns/ImageDocument.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/patterns/MusicDocument.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/patterns/MusicDocument.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/patterns/TextDocument.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/patterns/TextDocument.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/patterns/TextFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/patterns/TextFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/window/Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/window/Window.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java-project/window/MainFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java-project/window/MainFrame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java-project/window/Picture.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java-project/window/Window$ImagePanel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java-project/window/Window.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/guessgame/Frame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/guessgame/Frame.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,19 +46,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true"
   }
-}</component>
-  <component name="RunManager" selected="Application.MainFrame">
-    <configuration name="EditorUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="patterns.EditorUI" />
+}]]></component>
+  <component name="RunManager" selected="Application.TestClassList">
+    <configuration name="DemoExcept" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="except26.DemoExcept" />
       <module name="Java-project" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="patterns.*" />
+          <option name="PATTERN" value="except26.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -60,12 +67,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainFrame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="window.MainFrame" />
+    <configuration name="Exception1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="except26.Exception1" />
       <module name="Java-project" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="window.*" />
+          <option name="PATTERN" value="except26.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -73,12 +80,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestDrink" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="drink.TestDrink" />
+    <configuration name="Exception2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="except26.Exception2" />
       <module name="Java-project" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="drink.*" />
+          <option name="PATTERN" value="except26.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -86,12 +93,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestOrder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="drink.TestOrder" />
+    <configuration name="TestArrayClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="generic27.TestArrayClass" />
       <module name="Java-project" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="drink.*" />
+          <option name="PATTERN" value="generic27.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -99,12 +106,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Window" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="window.Window" />
+    <configuration name="TestClassList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="generic28.TestClassList" />
       <module name="Java-project" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="window.*" />
+          <option name="PATTERN" value="generic28.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -114,11 +121,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.MainFrame" />
-        <item itemvalue="Application.Window" />
-        <item itemvalue="Application.EditorUI" />
-        <item itemvalue="Application.TestOrder" />
-        <item itemvalue="Application.TestDrink" />
+        <item itemvalue="Application.TestClassList" />
+        <item itemvalue="Application.TestArrayClass" />
+        <item itemvalue="Application.DemoExcept" />
+        <item itemvalue="Application.Exception2" />
+        <item itemvalue="Application.Exception1" />
       </list>
     </recent_temporary>
   </component>
