@@ -32,4 +32,13 @@ public class Ball {
     public int getWeight(){
         return weight;
     }
+
+    @Override
+    public String toString() {
+        return "Ball{" +
+                "color='" + color + '\'' +
+                ", radius=" + radius +
+                ", weight=" + weight +
+                '}';
+    }
 }

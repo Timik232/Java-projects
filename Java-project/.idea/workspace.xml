@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5d069f2c-9b29-41b2-827f-f0bce699b987" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/regex30/PasswordClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/drink/main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/regex29/RegexClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/regex29/RegexClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java-project/regex29/RegexClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java-project/regex29/RegexClass.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/drink/GUIOrders.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/drink/GUIOrders.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/veryfirsttask/Ball.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/veryfirsttask/Ball.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,20 +43,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.PasswordClass">
-    <configuration name="DemoExcept" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="except26.DemoExcept" />
-      <module name="Java-project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="except26.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.main">
     <configuration name="PasswordClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="regex30.PasswordClass" />
       <module name="Java-project" />
@@ -107,13 +96,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="drink.main" />
+      <module name="Java-project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="drink.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.main" />
         <item itemvalue="Application.PasswordClass" />
         <item itemvalue="Application.RegexClass" />
         <item itemvalue="Application.TestClassList" />
         <item itemvalue="Application.TestArrayClass" />
-        <item itemvalue="Application.DemoExcept" />
       </list>
     </recent_temporary>
   </component>
