@@ -5,21 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5d069f2c-9b29-41b2-827f-f0bce699b987" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/collect24/testArrayList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/except26/DemoExcept.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/except26/Exception1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/except26/Exception2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/generic27/ArrayClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/generic27/TestArrayClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/generic28/ClassList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/generic28/TestClassList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/writetofile25/TestWritingToFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/regex30/PasswordClass.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java-project/window/MainFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java-project/window/MainFrame.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java-project/window/Picture.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java-project/window/Window$ImagePanel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java-project/window/Window.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guessgame/Frame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/guessgame/Frame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/regex29/RegexClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/regex29/RegexClass.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +41,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.TestClassList">
+  <component name="RunManager" selected="Application.PasswordClass">
     <configuration name="DemoExcept" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="except26.DemoExcept" />
       <module name="Java-project" />
@@ -67,12 +55,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Exception1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="except26.Exception1" />
+    <configuration name="PasswordClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="regex30.PasswordClass" />
       <module name="Java-project" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="except26.*" />
+          <option name="PATTERN" value="regex30.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -80,12 +68,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Exception2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="except26.Exception2" />
+    <configuration name="RegexClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="regex29.RegexClass" />
       <module name="Java-project" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="except26.*" />
+          <option name="PATTERN" value="regex29.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -121,11 +109,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.PasswordClass" />
+        <item itemvalue="Application.RegexClass" />
         <item itemvalue="Application.TestClassList" />
         <item itemvalue="Application.TestArrayClass" />
         <item itemvalue="Application.DemoExcept" />
-        <item itemvalue="Application.Exception2" />
-        <item itemvalue="Application.Exception1" />
       </list>
     </recent_temporary>
   </component>
