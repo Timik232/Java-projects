@@ -1,3 +1,5 @@
+package patterns;
+//
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -11,15 +13,15 @@ public class EditorUI extends JFrame {
     private final ICreateDocument factory = new TextFactory();
     private IDocument idocument;
     private  JFileChooser fileChooser = null;
-
     JMenuBar menuBar = new JMenuBar();
     public EditorUI(){
         super("Меню");
         setDefaultCloseOperation( EXIT_ON_CLOSE );
         menuBar.add(createFileMenu());
         setJMenuBar(menuBar);
-        setSize(500, 500);
+        setSize(500, 250);
         setVisible(true);
+        getContentPane().setBackground(Color.DARK_GRAY);
     }
     private JMenu createFileMenu(){
         fileChooser = new JFileChooser();
@@ -52,8 +54,6 @@ public class EditorUI extends JFrame {
                 fileChooser.setFileSelectionMode(JFileChooser.FILES_ONLY);
                 int result = fileChooser.showOpenDialog(EditorUI.this);
                 if (result == JFileChooser.APPROVE_OPTION ) {
-                    //JOptionPane.showMessageDialog(EditorUI.this,
-                    //        fileChooser.getSelectedFile());
                     File f = fileChooser.getSelectedFile();
                     try {
                         Desktop.getDesktop().open(f);

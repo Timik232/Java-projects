@@ -1,4 +1,4 @@
-
+package patterns;
 public class TextDocument implements IDocument{
     @Override
     public String print() {

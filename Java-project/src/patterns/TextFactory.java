@@ -1,3 +1,4 @@
+package patterns;
 public class TextFactory implements ICreateDocument{
     @Override
     public IDocument createNew() {

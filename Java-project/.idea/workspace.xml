@@ -4,7 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d069f2c-9b29-41b2-827f-f0bce699b987" name="Changes" comment="" />
+    <list default="true" id="5d069f2c-9b29-41b2-827f-f0bce699b987" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/patterns/EditorUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/patterns/EditorUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/patterns/ICreateDocument.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/patterns/ICreateDocument.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/patterns/IDocument.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/patterns/IDocument.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/patterns/ImageDocument.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/patterns/ImageDocument.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/patterns/MusicDocument.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/patterns/MusicDocument.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/patterns/TextDocument.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/patterns/TextDocument.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/patterns/TextFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/patterns/TextFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/window/Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/window/Window.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,13 +40,39 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="Application.TestOrder">
+}</component>
+  <component name="RunManager" selected="Application.MainFrame">
+    <configuration name="EditorUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="patterns.EditorUI" />
+      <module name="Java-project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="patterns.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainFrame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="window.MainFrame" />
+      <module name="Java-project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="window.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestDrink" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="drink.TestDrink" />
       <module name="Java-project" />
@@ -63,8 +99,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Window" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="window.Window" />
+      <module name="Java-project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="window.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MainFrame" />
+        <item itemvalue="Application.Window" />
+        <item itemvalue="Application.EditorUI" />
         <item itemvalue="Application.TestOrder" />
         <item itemvalue="Application.TestDrink" />
       </list>
