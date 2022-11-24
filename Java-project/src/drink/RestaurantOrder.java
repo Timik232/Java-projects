@@ -46,7 +46,7 @@ public class RestaurantOrder implements Order{
     public int removeAll(String name) {
         int count = 0;
         for (int i = 0; i < curSize; i++){
-            if (name == elements[i].getNAME()){
+            if (name.equals(elements[i].getNAME())){
                 count+=1;
                 for (int j = curSize; j > i+1; j--){
                     Item buf = elements[j];

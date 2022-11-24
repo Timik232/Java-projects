@@ -46,9 +46,9 @@ public class TestOrder {
         for (Item I : elements) {
             System.out.println(I.getNAME());
         }
-        manager.add(order1);
-        manager.add(order2);
-        manager.add(order3);
-        System.out.println("Amount in manager: " + manager.getAmount());
+        manager.add(order1,1);
+        manager.add(order2,2);
+        manager.add(order3,3);
+        System.out.println("Amount in manager: " + manager.ordersQuantity());
     }
 }
