@@ -29,14 +29,11 @@ public class RestaurantOrder implements Order{
     public boolean remove(String name) {
         boolean flag = false;
         for (int i = 0; i < curSize; i++){
-            if (name == elements[i].getNAME()){
+            if (name.equals(elements[i].getNAME())){
                 flag = true;
-                for (int j = i; j < curSize-1; j++){
-                    Item buf = elements[j];
-                    elements[j] = elements[j+1];
-                    elements[j+1] = buf;
-                }
+                elements[i] = null;
                 curSize-=1;
+                break;
             }
         }
         return flag;
@@ -48,11 +45,7 @@ public class RestaurantOrder implements Order{
         for (int i = 0; i < curSize; i++){
             if (name.equals(elements[i].getNAME())){
                 count+=1;
-                for (int j = curSize; j > i+1; j--){
-                    Item buf = elements[j];
-                    elements[j] = elements[j-1];
-                    elements[j-1] = buf;
-                }
+                elements[i] = null;
                 curSize-=1;
             }
         }

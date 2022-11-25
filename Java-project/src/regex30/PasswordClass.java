@@ -4,7 +4,7 @@ import java.util.regex.Matcher;
 
 public class PasswordClass {
     public static void passwordCheck(String password) {
-        String regex = "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*()_+\\-=\\[\\]{};':\"\\\\|,.<>\\/?]).{8,}$";
+        String regex = "^(?=.*[0-9])(?=.*[A-Z])(?=.*[a-z])(?=.*[!@#$%^&*()_+\\-=\\[\\]{};':\"\\\\|,.<>\\/?]).{8,}$";
         Matcher matcher = java.util.regex.Pattern.compile(regex).matcher(password);
         if (matcher.matches()) {
             System.out.println("Password is strong");

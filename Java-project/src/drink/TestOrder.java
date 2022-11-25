@@ -29,7 +29,8 @@ public class TestOrder {
         if (order1.remove("water")) {
             elements = order1.getArrayOrder();
             for (Item I : elements) {
-                System.out.println(I.getNAME());
+                if (I==null){}else
+                    System.out.println(I.getNAME());
             }
         }
         order3.add(meat);

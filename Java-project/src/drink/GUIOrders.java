@@ -12,21 +12,36 @@ import java.util.Comparator;
 public class GUIOrders extends JFrame{ //gui for OrderManager
         private JFrame frame;
         private JPanel mainPanel;
+        private final Color[] colors = {Color.CYAN, Color.lightGray, Color.GRAY};
+        private final String[] actions = {"Dish","RestaurantOrder","OrderManager"};
+        private final String[] tabs = {"Dish","Order","Manager"};
+        public JPanel dishMenu(JPanel panel){
+            panel.setLayout(new GridLayout());
 
+            return panel;
+        }
         public GUIOrders(){
-             frame = new JFrame("Restaurant");
+             /*frame = new JFrame("Restaurant");
             frame.setSize(500, 500);
             frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
             frame.setVisible(true);
             frame.setLayout(null);
-            frame.setLocationRelativeTo(null);
-
-            JPanel content = new JPanel();
-            content.setLayout(new BorderLayout());
-
-            JPanel buttons = new JPanel();
-            content.add(buttons, BorderLayout.NORTH);
-
+            frame.setLocationRelativeTo(null);*/
+             super("Restaurant");
+            JTabbedPane tabsLeft = new JTabbedPane(JTabbedPane.BOTTOM,
+                    JTabbedPane.SCROLL_TAB_LAYOUT);
+            for (int i = 0; i < 3; i++) {
+                JPanel panel = new JPanel();
+                panel.setBackground(colors[i]);
+                panel.add(new JLabel(String.format(actions[i],i)));
+                panel = dishMenu(panel);
+                tabsLeft.addTab(tabs[i],panel);
+            }
+            getContentPane().setLayout(new GridLayout());
+            getContentPane().add(tabsLeft);
+            setSize(600,250);
+            setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+            setLocationRelativeTo(null);
         }
 
 

@@ -10,4 +10,8 @@ public  class ArrayClass <E> {
             System.out.println(element);
         }
     }
+
+    public E[] getArr() {
+        return arr;
+    }
 }
