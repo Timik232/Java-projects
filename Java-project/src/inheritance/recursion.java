@@ -25,6 +25,6 @@ public class recursion {
     }
     public static void main(String[] args){
         System.out.println("Input a sequence of natural numbers: ");
-        recursion();
+        recursion2();
     }
 }

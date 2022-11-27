@@ -1,68 +1,52 @@
 package queue;
 
-public class ArrayQueue <T> extends ArrayQueueADT <T>  {
+public class ArrayQueue {
+    private Object[] arr;
+    private int size = 0;
+    private int last = 0;
+    private int first = 0;
 
-    ArrayQueue(int n, T[] arr){
-        front = -1;
-        rear = -1;
-        this.arr = arr;
-    }
-    @Override
-    public void enqueue(T el) {
-        if (front == 0 && rear == arr.length -1)
-            return;
-        if (front==-1)
-            front = 0;
-        rear = (rear+1)%arr.length;
-        arr[rear] = el;
-        if (curSize!=arr.length)
-            curSize+=1;
+    public ArrayQueue() {
+        arr = new Object[size];
+        last = first = 0;
     }
 
-    @Override
-    public T element() {
-        if (curSize!=0)
-            return arr[0];
-        else return null;
-    }
-
-    @Override
-    public T dequeue() {
-        if (curSize!=0){
-            T buf = arr[0];
-            for (int i = 0; i < curSize-1; i++){
-                arr[i] = arr[i+1];
+    public void enqueue(Object elem) {
+        if (isEmpty()) {
+            arr = new Object[++size];
+            arr[size - 1] = elem;
+        } else {
+            if (last + 1 >= size) {
+                System.arraycopy(arr, first, arr = new Object[size + 1], 0, size);
+                size++;
             }
-            curSize-=1;
-            rear-=1;
-            if (front == rear){
-                front = -1;
-                rear = -1;
-            }
-            return buf;
+            arr[size - 1] = elem;
+            last++;
         }
-        else return null;
     }
 
-    @Override
-    public boolean isEmpty() {
-        if (curSize==0)
-            return true;
-        else return false;
+
+    public Object element() {
+        return arr[first];
     }
 
-    @Override
+    public Object dequeue() {
+        Object res = arr[first];
+        System.arraycopy(arr, first + 1, arr = new Object[--size], 0, size);
+        return res;
+    }
+
     public int size() {
-        return curSize;
+        return size;
     }
 
-    @Override
+    public boolean isEmpty() {
+        return size == 0;
+    }
+
     public void clear() {
-        for (int i = 0; i < curSize; i++){
-            arr[i] = null;
-        }
-        curSize = 0;
-        front = -1;
-        rear = -1;
+        size = 0;
+        arr = new Object[size];
     }
 }
+

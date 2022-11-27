@@ -13,8 +13,7 @@ public class GUIOrders extends JFrame{ //gui for OrderManager
         private JFrame frame;
         private JPanel mainPanel;
         private final Color[] colors = {Color.CYAN, Color.lightGray, Color.GRAY};
-        private final String[] actions = {"Dish","RestaurantOrder","OrderManager"};
-        private final String[] tabs = {"Dish","Order","Manager"};
+        private final String[] columnNames = {"Добавить заказ", "Добавить интернет-заказ", "Удалить","Открыть"};
         public JPanel dishMenu(JPanel panel){
             panel.setLayout(new GridLayout());
 
@@ -30,13 +29,13 @@ public class GUIOrders extends JFrame{ //gui for OrderManager
              super("Restaurant");
             JTabbedPane tabsLeft = new JTabbedPane(JTabbedPane.BOTTOM,
                     JTabbedPane.SCROLL_TAB_LAYOUT);
-            for (int i = 0; i < 3; i++) {
+            /*for (int i = 0; i < 3; i++) {
                 JPanel panel = new JPanel();
                 panel.setBackground(colors[i]);
                 panel.add(new JLabel(String.format(actions[i],i)));
                 panel = dishMenu(panel);
                 tabsLeft.addTab(tabs[i],panel);
-            }
+            }*/
             getContentPane().setLayout(new GridLayout());
             getContentPane().add(tabsLeft);
             setSize(600,250);

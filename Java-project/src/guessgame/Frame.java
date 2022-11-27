@@ -33,6 +33,7 @@ public class Frame {
                 int number = Integer.parseInt(smallField.getText());
                 if (number == random) {
                     JOptionPane.showMessageDialog(frame, "You guessed the number!");
+                    System.exit(0);
                 } else if (number > random) {
                     JOptionPane.showMessageDialog(frame, "The number is smaller");
                 } else if (number < random) {

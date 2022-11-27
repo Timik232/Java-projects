@@ -3,8 +3,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 //28
-
-public class ClassList { //Write a function that will save the contents of the directory to a list and display the first 5 items on the screen.
+public class ClassList {
         ArrayList <File> list;
         String path;
     public ClassList (String Path) throws IOException {

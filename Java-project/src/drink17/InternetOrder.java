@@ -1,20 +1,17 @@
-package drink;
+package drink17;
 
-public class RestaurantOrder implements Order{
+import drink.Item;
+import drink17.Order;
+
+public class InternetOrder implements Order {
     private int size;
     private int curSize;
     private Item[] elements;
-    //private Dish[] dishes;
-    //private Drink[] drinks;
-
-    public RestaurantOrder(int size) {
+    public InternetOrder(int size) {
         this.size = size;
         curSize = 0;
         elements = new Item[size];
-        //dishes = new Dish[size];
-        //drinks = new Drink[size];
     }
-
     @Override
     public boolean add(Item item) {
         if (size == curSize){
@@ -80,7 +77,7 @@ public class RestaurantOrder implements Order{
         int count = 0;
         for (Item I: elements){
             if (I.getNAME() == name){
-             count+=1;
+                count+=1;
             }
         }
         return count;
@@ -123,7 +120,6 @@ public class RestaurantOrder implements Order{
                     items[in] = items[in+1];
                     items[in+1] = buf;
                 }
-
             }
         }
         return items;

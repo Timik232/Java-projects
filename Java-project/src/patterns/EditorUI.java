@@ -15,7 +15,7 @@ public class EditorUI extends JFrame {
     private  JFileChooser fileChooser = null;
     JMenuBar menuBar = new JMenuBar();
     public EditorUI(){
-        super("Меню");
+        super("Menu");
         setDefaultCloseOperation( EXIT_ON_CLOSE );
         menuBar.add(createFileMenu());
         setJMenuBar(menuBar);
@@ -50,7 +50,7 @@ public class EditorUI extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 idocument = factory.createOpen();
-                fileChooser.setDialogTitle("Выбор директории");
+                fileChooser.setDialogTitle("Choosing directory");
                 fileChooser.setFileSelectionMode(JFileChooser.FILES_ONLY);
                 int result = fileChooser.showOpenDialog(EditorUI.this);
                 if (result == JFileChooser.APPROVE_OPTION ) {
@@ -67,12 +67,12 @@ public class EditorUI extends JFrame {
         save.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                fileChooser.setDialogTitle("Сохранение файла");
+                fileChooser.setDialogTitle("Saving file");
                 fileChooser.setFileSelectionMode(JFileChooser.FILES_ONLY);
                 int result = fileChooser.showSaveDialog(EditorUI.this);
                 if (result == JFileChooser.APPROVE_OPTION )
                     JOptionPane.showMessageDialog(EditorUI.this,
-                            "Файл " + fileChooser.getSelectedFile() + " сохранен");
+                            "File " + fileChooser.getSelectedFile() + " was saved");
             }
         });
 

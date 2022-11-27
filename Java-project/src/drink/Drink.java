@@ -1,29 +1,26 @@
 package drink;
+public class Drink extends MenuItem implements Alcoholable{
+    Double alcoholVol;
+    DrinkTypeEnum type;
 
-final public class Drink implements Item{
-    final private int COST;
-    final private String NAME;
-    final private String DESCRIPTION;
-    Drink(String name, String description){
-        this.NAME = name;
-        this.DESCRIPTION = description;
-        COST = 0;
-    }
-    Drink(String name, String description, int cost){
-        this.NAME = name;
-        this.DESCRIPTION = description;
-        this.COST = cost;
+    public Drink(int cost, String name, String description, Double alcoholVol, DrinkTypeEnum type) {
+        super(cost, name, description);
+        this.alcoholVol = alcoholVol;
+        this.type = type;
     }
 
-    public int getCOST() {
-        return COST;
+    @Override
+    public boolean isAlcoholicDrink() {
+        return type.ordinal() <= DrinkTypeEnum.JAGERMEISTER.ordinal();
     }
 
-    public String getDESCRIPTION() {
-        return DESCRIPTION;
+    @Override
+    public double getAlcoholVol() {
+        return alcoholVol;
     }
 
-    public String getNAME() {
-        return NAME;
+    public DrinkTypeEnum getType() {
+        return type;
     }
 }
+

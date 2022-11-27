@@ -1,4 +1,7 @@
-package drink;
+package drink17;
+
+import drink17.Dish;
+import drink17.Order;
 
 public class OrderManager {
     private Order[] orders;

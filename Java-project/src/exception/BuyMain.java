@@ -10,11 +10,11 @@ public class BuyMain {
         try {
 
             String INN = in.nextLine();
-            if (INN.length() != 12)
-                throw new WrongNumberINNException("Amount of number");
             String regex = "[0-9]+";
             if (!INN.matches(regex))
                 throw new WrongNumberINNException("Wrong symbols");
+            if (INN.length() != 12)
+                throw new WrongNumberINNException("Amount of number");
             isOk = true;
         }
         catch (WrongNumberINNException numb){

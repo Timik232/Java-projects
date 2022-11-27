@@ -21,8 +21,8 @@ public class TestClass {
         if (arr.isEmpty())
             System.out.println("empty");
         String[] array = new String[2];
-        ArrayQueue strarr = new ArrayQueue(2,array);
+        ArrayQueueADT strarr = new ArrayQueueADT(2,array);
         strarr.enqueue("some");
-        System.out.println(strarr.dequeue());
+        System.out.println("ArrayQueueADT dequeue: " + strarr.dequeue());
     }
 }

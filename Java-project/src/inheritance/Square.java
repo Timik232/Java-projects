@@ -3,13 +3,13 @@ package inheritance;
 public class Square extends Rectangle{
     public Square(){
         this.filled = false;
-        this.color = "white";
+        this.color = "without";
         length = 1;
         width = length;
     }
     public Square(double side){
         this.filled = false;
-        this.color = "white";
+        this.color = "without";
         length = side;
         width = length;
     }
@@ -38,6 +38,9 @@ public class Square extends Rectangle{
         this.width = length;
     }
     public String toString() {
-        return "Shape: Square, side: "+this.length+", color: "+this.color;
+        if (filled)
+            return "Shape: Square, side: "+this.length+", color: "+this.color + ", filled";
+        else
+            return "Shape: Square, side: "+this.length+", color: "+this.color + ", not filled";
     }
 }

@@ -1,6 +1,6 @@
 package firsttasks;
 
-public class AuthorTest {
+public class TestAuthor {
     public static void main(String[] args) {
         Author Cawton = new Author("Scott Cawthon", "scott@email.com", 'M');
         System.out.println(Cawton.getName());

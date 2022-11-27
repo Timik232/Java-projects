@@ -1,13 +1,33 @@
 package drink;
 
 public interface Order {
-    boolean add(Item item);
-    boolean remove(String name);
-    int removeAll(String name);
-    int getAmount();
-    Item[] getArrayOrder();
-    int getFullCost();
-    int getNameAmount(String name);
-    Item[] getUniqueArrayOrder();
-    Item[] getSortedByCostArrayOrder();
+    boolean add(MenuItem item);
+
+    String[] itemsNames();
+
+    int itemsQuantity();
+
+    int itemsQuantity(String itemName);
+
+    int itemsQuantity(MenuItem item);
+
+    MenuItem[] getItems();
+
+    boolean remove(String itemName);
+
+    boolean remove(MenuItem item);
+
+    int removeAll(String itemName);
+
+    int removeAll(MenuItem item);
+
+    MenuItem[] sortedItemsByCostDesc();
+
+    int costTotal();
+
+    Customer getCustomer();
+
+    void setCustomer(Customer customer);
 }
+
+

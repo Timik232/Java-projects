@@ -6,13 +6,13 @@ public class Rectangle extends Shape{
     public Rectangle(){
     width = 1;
     length = 1;
-    color = "white";
+    color = "without";
     filled = false;
     }
     public Rectangle(double width, double length){
         this.width = width;
         this.length = length;
-        color = "white";
+        color = "without";
         filled = false;
     }
     public Rectangle(double width, double length, String color, boolean filled){
@@ -50,6 +50,9 @@ public class Rectangle extends Shape{
 
     @Override
     public String toString() {
-        return "Shape: rectangle," + " width=" + width + " length=" + length + " color= " + color;
+        if (filled)
+            return "Shape: rectangle," + " width=" + width + " length=" + length + " color= " + color + ", filled";
+        else
+            return "Shape: rectangle," + " width=" + width + " length=" + length + " color= " + color + ", not filled";
     }
 }

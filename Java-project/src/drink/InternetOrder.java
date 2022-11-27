@@ -1,124 +1,163 @@
 package drink;
 
+import java.awt.*;
+import java.util.Arrays;
+
 public class InternetOrder implements Order{
     private int size;
-    private int curSize;
-    private Item[] elements;
-    public InternetOrder(int size) {
-        this.size = size;
-        curSize = 0;
-        elements = new Item[size];
-    }
+    ListNode head;
+    ListNode tail;
+    Customer customer;
+
     @Override
-    public boolean add(Item item) {
-        if (size == curSize){
-            return false;
+    public boolean add(MenuItem item) {
+        if (size==0) {
+            head = new ListNode(null, item);
+            tail = head;
+        }else {
+            tail.next = new ListNode(null,item);
+            tail = tail.next;
         }
-        elements[curSize] = item;
-        curSize+=1;
+        size++;
         return true;
     }
 
     @Override
-    public boolean remove(String name) {
-        boolean flag = false;
-        for (int i = 0; i < curSize; i++){
-            if (name.equals(elements[i].getNAME())){
-                flag = true;
-                elements[i] = null;
-                curSize-=1;
+    public String[] itemsNames() {
+        String[] itemsNames = new String[size];
+        ListNode curr = head;
+        int i = 0;
+        while(curr!=null){
+            itemsNames[i]=curr.value.name;
+            curr = curr.next;
+            i++;
+        }
+        return itemsNames;
+    }
+
+    @Override
+    public int itemsQuantity() {
+        return size;
+    }
+
+    @Override
+    public int itemsQuantity(String itemName) {
+        ListNode curr = head;
+        int count = 0;
+        while(curr!=null){
+            if (curr.value.name == itemName){
+                count++;
+            }
+            curr = curr.next;
+        }
+        return count;
+    }
+
+    @Override
+    public int itemsQuantity(MenuItem item) {
+        ListNode curr = head;
+        int count = 0;
+        while(curr!=null){
+            if (curr.value == item){
+                count++;
+            }
+            curr = curr.next;
+        }
+        return count;
+    }
+
+    @Override
+    public MenuItem[] getItems() {
+        MenuItem[] items = new MenuItem[size];
+        ListNode curr = head;
+        int i = 0;
+        while(curr!=null){
+            items[i]=curr.value;
+            curr = curr.next;
+            i++;
+        }
+        return items;
+    }
+
+    @Override
+    public boolean remove(String itemName) {
+        ListNode curr = head;
+        while(curr.next!=null){
+            if (curr.next.value.name==itemName){
+                curr.next = curr.next.next;
                 break;
             }
+            curr = curr.next;
         }
-        return flag;
+        return true;
     }
 
     @Override
-    public int removeAll(String name) {
-        int count = 0;
-        for (int i = 0; i < curSize; i++){
-            if (name.equals(elements[i].getNAME())){
-                count+=1;
-                elements[i] = null;
-                curSize-=1;
+    public boolean remove(MenuItem item) {
+        ListNode curr = head;
+        while(curr.next!=null){
+            if (curr.next.value==item){
+                curr.next = curr.next.next;
             }
+            curr = curr.next;
+        }
+        return true;
+    }
+
+    @Override
+    public int removeAll(String itemName) {
+        ListNode curr = head;
+        int count = 0;
+        while(curr.next!=null){
+            if (curr.next.value.name==itemName){
+                curr.next = curr.next.next;
+                count++;
+            }
+            curr = curr.next;
         }
         return count;
     }
 
     @Override
-    public int getAmount() {
-        return curSize;
-    }
-
-    @Override
-    public Item[] getArrayOrder() {
-        Item[] items = new Item[curSize];
-        for (int i = 0; i < curSize; i++){
-            items[i] = elements[i];
-        }
-        return items;
-    }
-
-    @Override
-    public int getFullCost() {
-        int cost = 0;
-        for (Item I: elements){
-            cost+=I.getCOST();
-        }
-        return cost;
-    }
-
-    @Override
-    public int getNameAmount(String name) {
+    public int removeAll(MenuItem item) {
+        ListNode curr = head;
         int count = 0;
-        for (Item I: elements){
-            if (I.getNAME() == name){
-                count+=1;
+        while(curr.next!=null){
+            if (curr.next.value==item){
+                curr.next = curr.next.next;
+                count++;
             }
+            curr = curr.next;
         }
         return count;
     }
 
     @Override
-    public Item[] getUniqueArrayOrder() {
-        Item[] Unique = new Item[curSize];
-        Unique[0] = elements[0];
-        int count = 1;
-        for (int i = 1; i < curSize; i++){
-            boolean flag = false;
-            for (int j = 0; j < count; j++){
-                if (elements[i].getNAME() == Unique[j].getNAME()){
-                    flag = true;
-                    break;
-                }
-            }
-            if (!flag){
-                Unique[count] = elements[i];
-                count+=1;
-            }
-        }
-        Item[] realUnique = new Item[count];
-        for (int i = 0; i < count; i++){
-            realUnique[i] = Unique[i];
-        }
-        return realUnique;
+    public MenuItem[] sortedItemsByCostDesc() {
+        MenuItem[] items = getItems();
+        Arrays.sort(items, new MenuItemComparator());
+        return items;
     }
 
     @Override
-    public Item[] getSortedByCostArrayOrder() {
-        Item[] items = new Item[curSize];
-        for (int i = 0; i < curSize; i++)
-            items[i] = elements[i];
-        for (int out = curSize - 1; out >= 1; out--){
-            for (int in = 0; in < out; in++){
-                if(items[in].getCOST() < items[in + 1].getCOST()) {
-                    Item buf = items[in];
-                    items[in] = items[in+1];
-                    items[in+1] = buf;
-                }
-            }
+    public int costTotal() {
+        ListNode curr = head;
+        int total = 0;
+        while(curr!=null){
+            total+=curr.value.getCost();
+            curr = curr.next;
         }
-        return items;
+        return total;
+    }
+
+    @Override
+    public Customer getCustomer() {
+        return customer;
+    }
+
+    @Override
+    public void setCustomer(Customer customer) {
+        this.customer = customer;
     }
 }
+

@@ -7,10 +7,10 @@ public class PasswordClass {
         String regex = "^(?=.*[0-9])(?=.*[A-Z])(?=.*[a-z])(?=.*[!@#$%^&*()_+\\-=\\[\\]{};':\"\\\\|,.<>\\/?]).{8,}$";
         Matcher matcher = java.util.regex.Pattern.compile(regex).matcher(password);
         if (matcher.matches()) {
-            System.out.println("Password is strong");
+            System.out.println("Password " + password + " is strong");
         }
         else {
-            System.out.println("Password is weak");
+            System.out.println("Password " + password + " is weak");
         }
     }
 
@@ -18,7 +18,7 @@ public class PasswordClass {
         passwordCheck("Password1!");
         passwordCheck("password1!");
         passwordCheck("Password!");
-        passwordCheck("ser13volk");
-        passwordCheck("Ser_13_volk");
+        passwordCheck("too_weak_password");
+        passwordCheck("TOO_strong_password");
     }
 }

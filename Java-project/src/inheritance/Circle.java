@@ -4,12 +4,12 @@ public class Circle extends Shape {
     protected double radius;
     public Circle(){
         this.filled = false;
-        this.color = "white";
+        this.color = "without";
         radius = 1;
         }
     public Circle(double radius){
         this.filled = false;
-        this.color = "white";
+        this.color = "without";
         this.radius = radius;
         }
     public Circle(double radius, String color, boolean filled){
@@ -33,8 +33,10 @@ public class Circle extends Shape {
     }
     @Override
     public String toString() {
-        return "Shape: circle, radius: "+this.radius+", color: "+this.color;
+        if (filled)
+            return "Shape: Circle, radius: "+this.radius+", color: "+this.color + ", filled";
+        else
+            return "Shape: Circle, radius: "+this.radius+", color: "+this.color + ", not filled";
     }
-
 }
 

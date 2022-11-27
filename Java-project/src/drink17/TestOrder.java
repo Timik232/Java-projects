@@ -1,4 +1,6 @@
-package drink;
+package drink17;
+
+import drink.Item;
 
 public class TestOrder {
     public static void main(String[] args) {
