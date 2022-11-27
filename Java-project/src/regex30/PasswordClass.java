@@ -19,6 +19,6 @@ public class PasswordClass {
         passwordCheck("password1!");
         passwordCheck("Password!");
         passwordCheck("too_weak_password");
-        passwordCheck("TOO_strong_password");
+        passwordCheck("TOO_strong_password123");
     }
 }

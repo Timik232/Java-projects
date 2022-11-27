@@ -18,6 +18,5 @@ public enum DrinkTypeEnum {
     BLACK_TEA,
     MILK,
     WATER,
-    SODA,
-    OTHER
+    SODA
 }

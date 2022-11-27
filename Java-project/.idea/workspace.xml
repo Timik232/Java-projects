@@ -5,79 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5d069f2c-9b29-41b2-827f-f0bce699b987" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/drink/DrinkTypeEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/drink/InternetOrdersManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/drink/MenuItemComparator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/drink/OrdersManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/drink/QueueNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/drink/TableOrder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/drink/TableOrdersManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/drink/testMenuOrdersManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/drink17/Dish.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/drink17/Drink.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/drink17/InternetOrder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/drink17/Item.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/drink17/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/inheritance/MovableTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/veryfirsttask/TestBall.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java-project/drink/Dish.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java-project/drink/Dish.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java-project/drink/Drink.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java-project/drink/Drink.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java-project/drink/GUIOrders.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java-project/drink/GUIOrders.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java-project/drink/Order.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java-project/drink/Order.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java-project/drink/OrderManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java-project/drink/RestaurantOrder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java-project/drink/TestDrink.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java-project/drink/TestOrder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java-project/events/MilanMadrid$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java-project/events/MilanMadrid$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java-project/events/MilanMadrid.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java-project/exception/BuyMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java-project/exception/BuyMain.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java-project/firsttasks/AuthorTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java-project/generic/main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java-project/generic/main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java-project/generic27/ArrayClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java-project/generic27/ArrayClass.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java-project/inheritance/Circle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java-project/inheritance/Circle.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java-project/inheritance/Rectangle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java-project/inheritance/Rectangle.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java-project/inheritance/Square.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java-project/inheritance/Square.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java-project/inheritance/recursion.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java-project/inheritance/recursion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java-project/patterns/EditorUI$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java-project/patterns/EditorUI$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java-project/patterns/EditorUI$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java-project/patterns/EditorUI$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java-project/patterns/EditorUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java-project/patterns/EditorUI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java-project/patterns/ImageDocument.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java-project/patterns/ImageDocument.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java-project/patterns/MusicDocument.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java-project/patterns/MusicDocument.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java-project/patterns/TextDocument.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java-project/patterns/TextDocument.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java-project/queue/ArrayQueue.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java-project/queue/ArrayQueue.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java-project/queue/ArrayQueueADT.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java-project/queue/ArrayQueueADT.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java-project/queue/TestClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java-project/queue/TestClass.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Java-project/regex30/PasswordClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java-project/regex30/PasswordClass.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/drink/Dish.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/drink/Dish.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/drink/Drink.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/drink/Drink.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/drink/GUIOrders.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/drink/GUIOrders.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/drink/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/drink/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/drink/DrinkTypeEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/drink/DrinkTypeEnum.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/drink/InternetOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/drink/InternetOrder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/drink/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/drink/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/drink/OrderManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/drink17/OrderManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/drink/RestaurantOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/drink17/RestaurantOrder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/drink/TestDrink.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/drink17/TestDrink.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/drink/TestOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/drink17/TestOrder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/except26/DemoExcept.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/except26/DemoExcept.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exception/BuyMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exception/BuyMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/firsttasks/AuthorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/firsttasks/TestAuthor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generic/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/generic/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generic28/ClassList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/generic28/ClassList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guessgame/Frame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/guessgame/Frame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/inheritance/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/inheritance/Circle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/inheritance/MilanMadrid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/inheritance/MilanMadrid.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/inheritance/MovableCircle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/inheritance/MovableCircle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/inheritance/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/inheritance/Rectangle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/inheritance/Square.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/inheritance/Square.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/inheritance/recursion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/inheritance/recursion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/patterns/EditorUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/patterns/EditorUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/patterns/ImageDocument.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/patterns/ImageDocument.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/patterns/MusicDocument.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/patterns/MusicDocument.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/patterns/TextDocument.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/patterns/TextDocument.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/queue/ArrayQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/queue/ArrayQueue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/queue/ArrayQueueADT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/queue/ArrayQueueADT.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/queue/TestClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/queue/TestClass.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/regex30/PasswordClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/regex30/PasswordClass.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -115,20 +47,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.PasswordClass">
-    <configuration name="DemoExcept" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="except26.DemoExcept" />
-      <module name="Java-project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="except26.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.testMenuOrdersManager">
     <configuration name="PasswordClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="regex30.PasswordClass" />
       <module name="Java-project" />
@@ -181,13 +100,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="testMenuOrdersManager" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="drink.testMenuOrdersManager" />
+      <module name="Java-project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="drink.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.testMenuOrdersManager" />
         <item itemvalue="Application.PasswordClass" />
         <item itemvalue="Application.RegexClass" />
         <item itemvalue="Application.TestClassList" />
         <item itemvalue="Application.TestArrayClass" />
-        <item itemvalue="Application.DemoExcept" />
       </list>
     </recent_temporary>
   </component>
