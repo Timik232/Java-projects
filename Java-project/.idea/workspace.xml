@@ -6,11 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="5d069f2c-9b29-41b2-827f-f0bce699b987" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java-project/regex30/PasswordClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java-project/regex30/PasswordClass.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/drink/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/drink/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/drink/DrinkTypeEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/drink/DrinkTypeEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/drink/InternetOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/drink/InternetOrder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/regex30/PasswordClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/regex30/PasswordClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/drink/GUIOrders.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/drink/GUIOrders.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +43,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.testMenuOrdersManager">
+  <component name="RunManager" selected="Application.main">
     <configuration name="PasswordClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="regex30.PasswordClass" />
       <module name="Java-project" />
@@ -74,12 +70,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestArrayClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="generic27.TestArrayClass" />
+    <configuration name="TestClassList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="generic28.TestClassList" />
       <module name="Java-project" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="generic27.*" />
+          <option name="PATTERN" value="generic28.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -87,12 +83,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestClassList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="generic28.TestClassList" />
+    <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="drink.main" />
       <module name="Java-project" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="generic28.*" />
+          <option name="PATTERN" value="drink.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -115,11 +111,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.main" />
         <item itemvalue="Application.testMenuOrdersManager" />
         <item itemvalue="Application.PasswordClass" />
         <item itemvalue="Application.RegexClass" />
         <item itemvalue="Application.TestClassList" />
-        <item itemvalue="Application.TestArrayClass" />
       </list>
     </recent_temporary>
   </component>
