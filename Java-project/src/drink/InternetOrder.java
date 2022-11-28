@@ -2,7 +2,7 @@ package drink;
 
 import java.awt.*;
 import java.util.Arrays;
-import java.util.Objects;
+//import java.util.Objects;
 
 public class InternetOrder implements Order{
     private int size;
@@ -46,7 +46,7 @@ public class InternetOrder implements Order{
         ListNode curr = head;
         int count = 0;
         while(curr!=null){
-            if (Objects.equals(curr.value.name, itemName)){
+            if (curr.value.name.equals( itemName)){
                 count++;
             }
             curr = curr.next;
@@ -84,7 +84,7 @@ public class InternetOrder implements Order{
     public boolean remove(String itemName) {
         ListNode curr = head;
         while(curr.next!=null){
-            if (Objects.equals(curr.next.value.name, itemName)){
+            if (curr.next.value.name.equals(itemName)){
                 curr.next = curr.next.next;
                 break;
             }
@@ -110,7 +110,7 @@ public class InternetOrder implements Order{
         ListNode curr = head;
         int count = 0;
         while(curr.next!=null){
-            if (Objects.equals(curr.next.value.name, itemName)){
+            if (curr.next.value.name.equals(itemName)){
                 curr.next = curr.next.next;
                 count++;
             }

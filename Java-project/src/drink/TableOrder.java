@@ -32,8 +32,8 @@ public class TableOrder implements Order{
     @Override
     public int itemsQuantity(String itemName) {
         int quantity = 0;
-        for (var i : items){
-            if (i.name==itemName)
+        for (MenuItem i : items){
+            if (i.name.equals(itemName))
                 quantity++;
         }
         return quantity;
@@ -42,7 +42,7 @@ public class TableOrder implements Order{
     @Override
     public int itemsQuantity(MenuItem item) {
         int quantity = 0;
-        for (var i : items){
+        for (MenuItem i : items){
             if (i==item)
                 quantity++;
         }
@@ -58,7 +58,7 @@ public class TableOrder implements Order{
     public boolean remove(String itemName) {
         int remPos = -1;
         for (int i = 0; i<size;i++){
-            if (items[i].getName()==itemName){
+            if (items[i].getName().equals(itemName)){
                 remPos = i;
                 break;
             }
@@ -91,8 +91,8 @@ public class TableOrder implements Order{
     @Override
     public int removeAll(String itemName) {
         int count = 0;
-        for (var c: items) {
-            if (c.getName()==itemName) {
+        for (MenuItem c: items) {
+            if (c.getName().equals(itemName)) {
                 remove(itemName);
                 count++;
             }
@@ -103,7 +103,7 @@ public class TableOrder implements Order{
     @Override
     public int removeAll(MenuItem item) {
         int count = 0;
-        for (var c: items) {
+        for (MenuItem c: items) {
             if (c==item) {
                 remove(item);
                 count++;
