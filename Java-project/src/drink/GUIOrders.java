@@ -39,6 +39,10 @@ public class GUIOrders extends JFrame{
                 if (name == null) return false;
                 String cost = JOptionPane.showInputDialog("Введите цену напитка");
                 if (cost == null) return false;
+                if (Integer.parseInt(cost) < 0) {
+                    JOptionPane.showMessageDialog(null, "Некорректная цена напитка");
+                    return false;
+                }
                 String description = JOptionPane.showInputDialog("Введите описание напитка");
                 if (description == null) return false;
                 String degrees = JOptionPane.showInputDialog("Введите крепость напитка");
@@ -97,6 +101,10 @@ public class GUIOrders extends JFrame{
                 if (name == null) return false;
                 String cost = JOptionPane.showInputDialog("Введите цену блюда");
                 if (cost == null) return false;
+                if (Integer.parseInt(cost) < 0) {
+                    JOptionPane.showMessageDialog(null, "Некорректная цена блюда");
+                    return false;
+                }
                 String description = JOptionPane.showInputDialog("Введите описание блюда");
                 if (description == null) return false;
                 Dish dish = new Dish(Integer.parseInt(cost), name, description);
@@ -150,15 +158,20 @@ public class GUIOrders extends JFrame{
             cancel.addActionListener(new ActionListener() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
-                    if (order.itemsQuantity() == 0)
-                        if (JOptionPane.showConfirmDialog(null, "Вы не составили заказ, вы уверены, что хотите выйти?") == JOptionPane.YES_OPTION){
-                        internetOrder.dispose();
+                    if (order.itemsQuantity() == 0){
+                        if (JOptionPane.showConfirmDialog(null, "Вы не составили заказ, вы уверены, что хотите выйти?") == JOptionPane.YES_OPTION) {
+                            internetOrder.dispose();
+                        }
+                        else {
+                            return;
+                        }
                     }
                     order.setCustomer(customers[customers.length - 1]);
                     internetOrdersManager.add(order);
                     data[tableSize][0] = "Заказ в Интернете";
-                    data[tableSize][1] = customers[customers.length - 1].getFirstName();
+                    data[tableSize][1] = customers[customers.length - 1].getFirstName() + " " + customers[customers.length - 1].getSecondName();
                     data[tableSize][2] = String.valueOf(order.costTotal());
+                    table.repaint();
                     //System.arraycopy(data, 0, data = new String[data.length + 1][3], 0, data.length-1);
                     tableSize++;
                     JOptionPane.showMessageDialog(null, "Заказ добавлен");
@@ -218,6 +231,9 @@ public class GUIOrders extends JFrame{
                             restaurantOrder.dispose();
                             return;
                         }
+                        else {
+                            return;
+                        }
                     while (true) {
                         boolean flag = true;
                         String tableNumber = JOptionPane.showInputDialog("Введите номер столика");
@@ -248,6 +264,7 @@ public class GUIOrders extends JFrame{
                     data[tableSize][0] = "Заказ в ресторане";
                     data[tableSize][1] = customers[customers.length - 1].getFirstName() + " " + customers[customers.length - 1].getSecondName();
                     data[tableSize][2] = String.valueOf(order.costTotal());
+                    table.repaint();
                     //System.arraycopy(data, 0, data = new String[data.length + 1][3], 0, data.length-1);
                     tableSize++;
                     JOptionPane.showMessageDialog(null, "Заказ добавлен");
@@ -370,16 +387,60 @@ public class GUIOrders extends JFrame{
             button.addActionListener(new ActionListener() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
-                    if (JOptionPane.showConfirmDialog(null, "Вы уверены, что хотите удалить заказ?") == JOptionPane.YES_OPTION){
-                        if (comboBox.getSelectedItem().toString().contains("Интернет")){
+                    if (JOptionPane.showConfirmDialog(null, "Вы уверены, что хотите удалить заказ?") == JOptionPane.YES_OPTION) {
+                        if (comboBox.getSelectedItem().toString().contains("Интернет")) {
                             internetOrdersManager.remove(finalOrders[comboBox.getSelectedIndex()]);
-                        }
-                        else if (comboBox.getSelectedItem().toString().contains("Столик")){
+                            //delete data from table
+                            for (int i = 0; i < table.getRowCount(); i++) {
+                                if (data[i][0].contains("Интернет")) {
+                                    if (data[i][1].equals(finalOrders[comboBox.getSelectedIndex()].getCustomer().getFirstName() + " " + finalOrders[comboBox.getSelectedIndex()].getCustomer().getSecondName())) {
+                                        data[i][0] = "";
+                                        data[i][1] = "";
+                                        data[i][2] = "";
+                                        for (int j = i; j < table.getRowCount() - 1; j++) {
+                                            data[j][0] = data[j + 1][0];
+                                            data[j][1] = data[j + 1][1];
+                                            data[j][2] = data[j + 1][2];
+                                        }
+                                        data[table.getRowCount() - 1][0] = "";
+                                        data[table.getRowCount() - 1][1] = "";
+                                        data[table.getRowCount() - 1][2] = "";
+                                        table.repaint();
+                                        tableSize--;
+                                        break;
+                                    }
+                                }
+                            }
+                        } else if (comboBox.getSelectedItem().toString().contains("Столик")) {
+                            System.out.println(1);
                             tableOrdersManager.remove(finalOrders[comboBox.getSelectedIndex()]);
+                            for (int i = 0; i < table.getRowCount(); i++) {
+                                if (data[i][0].contains("ресторан")) {
+                                    //System.out.println(finalOrders[comboBox.getSelectedIndex()].getCustomer().getFirstName() + " " + finalOrders[comboBox.getSelectedIndex()].getCustomer().getSecondName());
+                                    if (data[i][1].equals(finalOrders[comboBox.getSelectedIndex()].getCustomer().getFirstName() + " " + finalOrders[comboBox.getSelectedIndex()].getCustomer().getSecondName())) {
+                                        data[i][0] = "";
+                                        data[i][1] = "";
+                                        data[i][2] = "";
+                                        for (int j = i; j < table.getRowCount() - 1; j++) {
+                                            data[j][0] = data[j + 1][0];
+                                            data[j][1] = data[j + 1][1];
+                                            data[j][2] = data[j + 1][2];
+                                        }
+                                        data[table.getRowCount() - 1][0] = "";
+                                        data[table.getRowCount() - 1][1] = "";
+                                        data[table.getRowCount() - 1][2] = "";
+                                        table.repaint();
+                                        tableSize--;
+                                        break;
+                                    }
+                                }
+                            }
                         }
                         deleteOrder.dispose();
                     }
+
                 }
+
             });
             deleteOrder.add(comboBox);
             deleteOrder.add(button);
@@ -430,6 +491,27 @@ public class GUIOrders extends JFrame{
                 @Override
                 public void actionPerformed(ActionEvent e) {
                     if (JOptionPane.showConfirmDialog(null, "Вы уверены, что хотите удалить заказ?") == JOptionPane.YES_OPTION){
+                        System.out.println("Удаление заказа");
+                        for (int i = 0; i < table.getRowCount(); i++){
+                            System.out.println(data[i][1] + " " + order.getCustomer().getFirstName() + " " + order.getCustomer().getSecondName());
+                            if (data[i][1].equals(order.getCustomer().getFirstName() + " " + order.getCustomer().getSecondName())){
+                                System.out.println(1);
+                                data[i][0] = "";
+                                data[i][1] = "";
+                                data[i][2] = "";
+                                for (int j = i; j < table.getRowCount() - 1; j++){
+                                    data[j][0] = data[j + 1][0];
+                                    data[j][1] = data[j + 1][1];
+                                    data[j][2] = data[j + 1][2];
+                                }
+                                data[table.getRowCount() - 1][0] = "";
+                                data[table.getRowCount() - 1][1] = "";
+                                data[table.getRowCount() - 1][2] = "";
+                                table.repaint();
+                                tableSize--;
+                                break;
+                            }
+                        }
                         internetOrdersManager.remove(order);
                         internetOrder.dispose();
                     }
@@ -612,11 +694,8 @@ public class GUIOrders extends JFrame{
             getContentPane().add(table, BorderLayout.CENTER);
             getContentPane().add(scrollPane);
             getContentPane().add(panel);
-
-
             setResizable(false);
             setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
             setLocationRelativeTo(null);
         }
-
 }
