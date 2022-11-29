@@ -22,5 +22,10 @@ public class MenuItem {
     public String getDescription() {
         return description;
     }
+
+    @Override
+    public String toString() {
+        return name + " со стоимостью: " + cost + " и описанием: " + description;
+    }
 }
 

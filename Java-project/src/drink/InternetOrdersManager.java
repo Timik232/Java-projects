@@ -16,10 +16,26 @@ public class InternetOrdersManager implements OrdersManager{
         return true;
 
     }
-    Order remove(){
+    public Order remove(){
         QueueNode tmp = head;
         head = head.prev;
+        size--;
         return tmp.value;
+    }
+    public boolean remove(Order order){
+        QueueNode curr = head;
+        while (curr!=null){
+            if (curr.value==order){
+                if (curr.prev!=null)
+                    curr.prev.next = curr.next;
+                if (curr.next!=null)
+                    curr.next.prev = curr.prev;
+                size--;
+                return true;
+            }
+            curr = curr.prev;
+        }
+        return false;
     }
     Order order(){
         return head.value;

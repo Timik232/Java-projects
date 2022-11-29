@@ -7,6 +7,9 @@
     <list default="true" id="5d069f2c-9b29-41b2-827f-f0bce699b987" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/drink/GUIOrders.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/drink/GUIOrders.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/drink/InternetOrdersManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/drink/InternetOrdersManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/drink/MenuItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/drink/MenuItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/drink/TableOrdersManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/drink/TableOrdersManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

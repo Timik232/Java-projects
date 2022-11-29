@@ -41,7 +41,6 @@ public class TableOrdersManager implements OrdersManager{
         for (int i = 0; i<size;i++){
             if (orders[i]==order){
                 remove(i);
-                elemCount--;
                 return true;
             }
         }
