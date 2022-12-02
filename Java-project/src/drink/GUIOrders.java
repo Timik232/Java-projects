@@ -37,14 +37,6 @@ public class GUIOrders extends JFrame{
             try {
                 String name = JOptionPane.showInputDialog("Введите название напитка");
                 if (name == null) return false;
-                String cost = JOptionPane.showInputDialog("Введите цену напитка");
-                if (cost == null) return false;
-                if (Integer.parseInt(cost) < 0) {
-                    JOptionPane.showMessageDialog(null, "Некорректная цена напитка");
-                    return false;
-                }
-                String description = JOptionPane.showInputDialog("Введите описание напитка");
-                if (description == null) return false;
                 String degrees = JOptionPane.showInputDialog("Введите крепость напитка");
                 if (degrees == null) return false;
                 if (Double.parseDouble(degrees) > 100 || Double.parseDouble(degrees) < 0) {
@@ -66,6 +58,14 @@ public class GUIOrders extends JFrame{
                         return false;
                     }
                 }
+                String cost = JOptionPane.showInputDialog("Введите цену напитка");
+                if (cost == null) return false;
+                if (Integer.parseInt(cost) < 0) {
+                    JOptionPane.showMessageDialog(null, "Некорректная цена напитка");
+                    return false;
+                }
+                String description = JOptionPane.showInputDialog("Введите описание напитка");
+                if (description == null) return false;
                 ArrayList arr = new ArrayList<DrinkTypeEnum>(Arrays.asList(DrinkTypeEnum.values()));
                 JFrame choose = new JFrame("тип напитка");
                 JComboBox comboBox = new JComboBox(arr.toArray());
@@ -112,6 +112,7 @@ public class GUIOrders extends JFrame{
             }
             catch (Exception e){
                 JOptionPane.showMessageDialog(null, "Ошибка ввода");
+                return false;
             }
             return true;
         }
@@ -491,11 +492,8 @@ public class GUIOrders extends JFrame{
                 @Override
                 public void actionPerformed(ActionEvent e) {
                     if (JOptionPane.showConfirmDialog(null, "Вы уверены, что хотите удалить заказ?") == JOptionPane.YES_OPTION){
-                        System.out.println("Удаление заказа");
                         for (int i = 0; i < table.getRowCount(); i++){
-                            System.out.println(data[i][1] + " " + order.getCustomer().getFirstName() + " " + order.getCustomer().getSecondName());
                             if (data[i][1].equals(order.getCustomer().getFirstName() + " " + order.getCustomer().getSecondName())){
-                                System.out.println(1);
                                 data[i][0] = "";
                                 data[i][1] = "";
                                 data[i][2] = "";
@@ -568,6 +566,24 @@ public class GUIOrders extends JFrame{
                 @Override
                 public void actionPerformed(ActionEvent e) {
                     if (JOptionPane.showConfirmDialog(null, "Вы уверены, что хотите удалить заказ?") == JOptionPane.YES_OPTION){
+                        for (int i = 0; i < table.getRowCount(); i++){
+                            if (data[i][1].equals(order.getCustomer().getFirstName() + " " + order.getCustomer().getSecondName())){
+                                data[i][0] = "";
+                                data[i][1] = "";
+                                data[i][2] = "";
+                                for (int j = i; j < table.getRowCount() - 1; j++){
+                                    data[j][0] = data[j + 1][0];
+                                    data[j][1] = data[j + 1][1];
+                                    data[j][2] = data[j + 1][2];
+                                }
+                                data[table.getRowCount() - 1][0] = "";
+                                data[table.getRowCount() - 1][1] = "";
+                                data[table.getRowCount() - 1][2] = "";
+                                table.repaint();
+                                tableSize--;
+                                break;
+                            }
+                        }
                         tableOrdersManager.remove(order);
                         tableOrder.dispose();
                     }
